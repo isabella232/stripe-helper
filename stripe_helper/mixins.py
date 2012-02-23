@@ -1,6 +1,6 @@
 import stripe
 
-from zebra.conf import options
+from stripe_helper.conf import options
 
 
 def _get_attr_value(instance, attr, default=None):

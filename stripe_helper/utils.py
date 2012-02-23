@@ -1,4 +1,4 @@
-from zebra.conf import options
+from stripe_helper.conf import options
 
 AUDIT_RESULTS = options.ZEBRA_AUDIT_RESULTS
 
