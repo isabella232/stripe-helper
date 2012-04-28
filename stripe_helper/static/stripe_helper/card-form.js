@@ -18,7 +18,7 @@ $(function() {
           form.submit();
 		  $("button[type=submit]").attr("disabled","disabled").html("Submitting..")
         } else {
-          $(".error-box").text(response.error.message);
+          $(".errorbox").text(response.error.message);
           $("#user_submit").attr("disabled", false);
         }
       });
