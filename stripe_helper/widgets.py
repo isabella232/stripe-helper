@@ -19,9 +19,6 @@ class NoNameWidget(object):
         return widget_string.replace("name=\"%s\"" % (name,), "")
 
     class Media:
-        css = {
-            'all': ('stripe_helper/card-form.css',)
-        }
         js = ('stripe_helper/card-form.js', 'https://js.stripe.com/v1/')
 
 
