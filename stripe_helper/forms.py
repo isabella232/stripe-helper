@@ -11,7 +11,7 @@ class MonospaceForm(forms.Form):
         self._errors[NON_FIELD_ERRORS] = self.error_class([message])
 
 
-class CardForm(MonospaceForm):
+class CardForm(forms.Form):
     last_4_digits = forms.CharField(required=True, min_length=4, max_length=4,
         widget=forms.HiddenInput())
     stripe_token = forms.CharField(required=True, widget=forms.HiddenInput())
